@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
+import profileImage from "../assets/profile.jpg";
 // Using a generic computer animation or abstract shape would be good here.
 // Since I cannot fetch an external JSON easily without url, I will default to a Framer Motion blob for the "blurry" effect + a placeholder text for where the Lottie would go if the user provides one.
 // However, the user asked for Lottie. I will try to use a widely available public URL or just comment it out for the user to fill.
@@ -65,13 +66,17 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="relative h-[400px] w-full flex items-center justify-center"
                 >
-                    {/* Placeholder for Lottie - Using a glass card for now */}
-                    <div className="glass-panel w-full h-full rounded-3xl flex items-center justify-center p-8 relative overflow-hidden group">
-                        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                        <p className="text-gray-500 text-center">
-                            [Lottie Animation Placeholder]<br />
-                            <span className="text-sm opacity-60">Add animation.json here</span>
-                        </p>
+                    {/* Profile Image */}
+                    <div className="relative w-80 h-80 md:w-96 md:h-96">
+                        <div className="absolute inset-0 bg-indigo-500/20 rounded-[2rem] blur-2xl transform rotate-6" />
+                        <div className="absolute inset-0 bg-purple-500/20 rounded-[2rem] blur-2xl transform -rotate-6" />
+                        <div className="relative w-full h-full glass-panel rounded-[2rem] overflow-hidden p-2 border-white/20">
+                            <img
+                                src={profileImage}
+                                alt="Sahad PP"
+                                className="w-full h-full object-cover rounded-[1.5rem]"
+                            />
+                        </div>
                     </div>
                 </motion.div>
             </div>
