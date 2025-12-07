@@ -18,7 +18,7 @@ export default function Hero() {
                         scale: [1, 1.2, 1],
                     }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-indigo-600/20 rounded-full blur-[120px]"
+                    className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px]"
                 />
                 <motion.div
                     animate={{
@@ -27,7 +27,7 @@ export default function Hero() {
                         scale: [1, 1.3, 1],
                     }}
                     transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                    className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[120px]"
+                    className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-gray-500/10 rounded-full blur-[120px]"
                 />
             </div>
 
@@ -37,7 +37,7 @@ export default function Hero() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-indigo-400 font-medium mb-4 text-lg">Hello, I&apos;m</h2>
+                    <h2 className="text-gray-400 font-medium mb-4 text-lg">Hello, I&apos;m</h2>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                         Sahad <span className="text-gradient">PP</span>
                     </h1>
@@ -68,13 +68,13 @@ export default function Hero() {
                 >
                     {/* Profile Image */}
                     <div className="relative w-80 h-80 md:w-96 md:h-96">
-                        <div className="absolute inset-0 bg-indigo-500/20 rounded-[2rem] blur-2xl transform rotate-6" />
-                        <div className="absolute inset-0 bg-purple-500/20 rounded-[2rem] blur-2xl transform -rotate-6" />
+                        <div className="absolute inset-0 bg-white/10 rounded-[2rem] blur-2xl transform rotate-6" />
+                        <div className="absolute inset-0 bg-gray-500/10 rounded-[2rem] blur-2xl transform -rotate-6" />
                         <div className="relative w-full h-full glass-panel rounded-[2rem] overflow-hidden p-2 border-white/20">
                             <img
                                 src={profileImage}
                                 alt="Sahad PP"
-                                className="w-full h-full object-cover rounded-[1.5rem]"
+                                className="w-full h-full object-cover rounded-[1.5rem] grayscale hover:grayscale-0 transition-all duration-500"
                             />
                         </div>
                     </div>

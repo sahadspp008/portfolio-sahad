@@ -38,7 +38,7 @@ export default function Skills() {
                                 transition={{ duration: 0.4, delay: index * 0.05 }}
                                 viewport={{ once: true }}
                                 whileHover={{ scale: 1.05 }}
-                                className="glass-panel px-6 py-3 rounded-full text-indigo-200 border border-white/5 hover:border-indigo-500/30 transition-colors cursor-default"
+                                className="glass-panel px-6 py-3 rounded-full text-gray-300 border border-white/5 hover:border-white/30 transition-colors cursor-default"
                             >
                                 {skill}
                             </motion.div>

@@ -38,12 +38,12 @@ export default function Experience() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="glass-panel p-8 rounded-3xl relative border-l-4 border-indigo-500"
+                            className="glass-panel p-8 rounded-3xl relative border-l-4 border-white/20"
                         >
                             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
                                 <div>
                                     <h3 className="text-2xl font-bold text-white mb-2">{exp.role}</h3>
-                                    <h4 className="text-indigo-300 text-lg mb-1">{exp.company}</h4>
+                                    <h4 className="text-gray-300 text-lg mb-1">{exp.company}</h4>
                                     <p className="text-sm text-gray-500 flex items-center gap-2">
                                         {exp.location}
                                     </p>
@@ -56,7 +56,7 @@ export default function Experience() {
                             <ul className="space-y-3">
                                 {exp.description.map((item, i) => (
                                     <li key={i} className="flex items-start text-gray-300">
-                                        <span className="mr-3 text-indigo-400 mt-1.5">•</span>
+                                        <span className="mr-3 text-white mt-1.5">•</span>
                                         <span className="leading-relaxed">{item}</span>
                                     </li>
                                 ))}

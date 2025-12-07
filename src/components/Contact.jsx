@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <section id="contact" className="py-20 relative overflow-hidden">
             {/* Decorative gradient */}
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-indigo-600/10 blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-white/5 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10 text-center">
                 <motion.div
@@ -26,7 +26,7 @@ export default function Contact() {
                             href="mailto:sahadspp@outlook.com"
                             className="glass-panel p-6 rounded-2xl flex items-center gap-4 hover:bg-white/5 transition-colors group"
                         >
-                            <div className="p-3 rounded-full bg-indigo-500/20 text-indigo-400 group-hover:bg-indigo-500/30 group-hover:scale-110 transition-all">
+                            <div className="p-3 rounded-full bg-white/10 text-white group-hover:bg-white/20 group-hover:scale-110 transition-all">
                                 <Mail size={24} />
                             </div>
                             <div className="text-left">
@@ -39,7 +39,7 @@ export default function Contact() {
                             href="tel:+971567931588"
                             className="glass-panel p-6 rounded-2xl flex items-center gap-4 hover:bg-white/5 transition-colors group"
                         >
-                            <div className="p-3 rounded-full bg-emerald-500/20 text-emerald-400 group-hover:bg-emerald-500/30 group-hover:scale-110 transition-all">
+                            <div className="p-3 rounded-full bg-white/10 text-white group-hover:bg-white/20 group-hover:scale-110 transition-all">
                                 <Phone size={24} />
                             </div>
                             <div className="text-left">

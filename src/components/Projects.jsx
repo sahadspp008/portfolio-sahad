@@ -30,7 +30,7 @@ export default function Projects() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            className="glass-panel rounded-3xl overflow-hidden group hover:border-indigo-500/30 transition-colors"
+                            className="glass-panel rounded-3xl overflow-hidden group hover:border-white/30 transition-colors"
                         >
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="h-64 md:h-auto overflow-hidden">
@@ -41,7 +41,7 @@ export default function Projects() {
                                     />
                                 </div>
                                 <div className="p-8 flex flex-col justify-center">
-                                    <h3 className="text-2xl font-bold mb-4 group-hover:text-indigo-400 transition-colors">{project.title}</h3>
+                                    <h3 className="text-2xl font-bold mb-4 group-hover:text-white transition-colors">{project.title}</h3>
                                     <p className="text-gray-300 mb-6 leading-relaxed">{project.description}</p>
                                     <div className="flex flex-wrap gap-2">
                                         {project.tags.map(tag => (

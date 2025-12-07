@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <main className="antialiased text-white selection:bg-indigo-500/30">
+    <main className="antialiased text-white selection:bg-white/30">
       <Navbar />
       <Hero />
       <Projects />

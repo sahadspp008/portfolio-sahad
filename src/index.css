@@ -3,16 +3,23 @@
 @theme {
   --font-display: "Clash Display", sans-serif;
   --font-body: "Inter", sans-serif;
-  
+
   --color-glass-surface: rgba(255, 255, 255, 0.05);
   --color-glass-border: rgba(255, 255, 255, 0.1);
   --color-primary-glow: rgba(120, 119, 198, 0.3);
-  
+
   --animate-float: float 6s ease-in-out infinite;
-  
+
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
   }
 }
 
@@ -36,7 +43,7 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-  background: radial-gradient(circle at 50% -20%, #1a1a2e, #050505);
+  background: radial-gradient(circle at 50% -20%, #1a1a1a, #000000);
 }
 
 .glass-panel {
@@ -48,7 +55,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #fff, #a5a6f6);
+  background: linear-gradient(to right, #ffffff, #999999);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
