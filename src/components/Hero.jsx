@@ -36,12 +36,12 @@ export default function Hero() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-indigo-400 font-medium mb-4 text-lg">Hello, I'm</h2>
+                    <h2 className="text-indigo-400 font-medium mb-4 text-lg">Hello, I&apos;m</h2>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                         Sahad <span className="text-gradient">PP</span>
                     </h1>
                     <p className="text-xl text-gray-400 mb-8 max-w-lg">
-                        Building digital experiences with modern technologies. Focusing on motion, aesthetics, and performance.
+                        Electrical & Electronics Engineer specializing in electrical design, load calculation, and circuit protection. Experienced in network engineering and ELV systems.
                     </p>
                     <div className="flex gap-4">
                         <a
